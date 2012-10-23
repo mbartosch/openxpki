@@ -1,0 +1,17 @@
+
+
+Configuration
+
+Build
+
+Post install files
+- all files under files/ will be installed literally in the target VM
+
+Post install script
+The shell script scripts/postinstall.sh will be executed immediately after finishing the 
+build process and copying the post install files.
+The first argument of scripts/postinstall.sh is the chroot directory of the target VM, to run scripts chrooted in the VM target use
+
+chroot $1 CMD
+
+
